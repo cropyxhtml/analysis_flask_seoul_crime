@@ -1,3 +1,4 @@
+#-*- coding:utf-8 -*-
 from seoul_crime.controller import Controller
 
 if __name__ == '__main__':

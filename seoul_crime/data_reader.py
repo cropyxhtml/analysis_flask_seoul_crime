@@ -1,3 +1,4 @@
+#-*- coding:utf-8 -*-
 import numpy as np
 import pandas as pd
 import json
@@ -27,7 +28,7 @@ class DataReader:
 
     def csv_to_dframe(self) -> object:
         file = self.new_file()
-        return pd.read_csv(file,encoding='utf-8', thousands=',')
+        return pd.read_csv(file,encoding='euc-kr', thousands=',',)
 
     def xls_to_dframe(self, header, usecols) -> object:
         file = self.new_file()
