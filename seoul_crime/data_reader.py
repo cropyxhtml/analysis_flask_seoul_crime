@@ -39,4 +39,4 @@ class DataReader:
         return json.load(open(file, encoding='utf-8'))
 
     def create_gmaps(self):
-        return googlemaps.client(key='')
+        return googlemaps.Client(key='')
